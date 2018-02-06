@@ -1,6 +1,39 @@
 /* ================================= 
   Base Styles
 ==================================== */
+
+.dog-ico{
+    height:80%;
+    padding: 1em;
+}
+
+.cat-ico img{
+    padding: 4em;
+}
+
+
+.image{
+    padding: 2em !important;
+}
+
+h1{
+    margin-left:1em !important;
+}
+
+main{
+    margin: 2em 0;
+    
+}
+
+section.cats{
+margin: 0 auto;
+    height: 20em;
+    z-index: 10;
+    height: 100%;
+    padding: 2em;
+    margin-left:1em;
+}
+
 #logo {
   width: 8%;
 margin-left:-4em;}
@@ -8,7 +41,6 @@ margin-left:-4em;}
 .splash{
   width:110%;
 }
-
 
 * {
   -webkit-box-sizing: border-box;
@@ -68,7 +100,7 @@ a {
 }
 @media (min-width: 500px) {
   #main-header .logo, #main-header nav a {
-    padding: 10px 15px;
+    padding: 10px 20px;
   }
 }
 #main-header .logo {
@@ -265,6 +297,9 @@ a {
   flex-direction: column;
   padding: 4em 0;
 }
+
+
+
 #pricing article {
   background: #f7f7f7;
   display: flex;
