@@ -1,6 +1,9 @@
 /* ================================= 
   Base Styles
 ==================================== */
+body{
+  margin:0;
+}
 
 .dog-ico{
     height:80%;
@@ -366,4 +369,95 @@ a {
       background: rgba(243, 182, 169, 0);
 
   color: #738794 !important;
+}
+
+.sidr {
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 16em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sidr.left {
+  left: -16em;
+  right: auto;
+}
+
+#sidr, #sidr-show-hide{
+  padding:1em;
+  
+}
+
+ #nav-ul{
+    list-style-type: none;
+     padding: 0;
+}
+
+#nav-ul li{
+    padding: 1em;
+    border-bottom: 1px rgba(0,0,0,.2) solid;
+}
+
+#nav{
+      visibility: hidden;
+    }
+
+#logo{
+  position: relative;
+  bottom: 3em;
+  left: 12em;
+  width:30%;
+    margin-bottom: -2.5em;
+
+}
+
+
+.splash{
+  visibility: hidden;
+}
+
+/***
+Media Queries
+***/
+
+/*
+Mobile
+*/
+
+
+@media (min-width: 600px) {
+  #main-header .logo, #main-header nav a {
+    padding: 10px 15px;
+  }
+  #sidr, #sidr-show-hide{
+      visibility: hidden;
+    }
+  
+  #nav{
+      visibility: visible;
+    position: absolute;
+    right: 1%;
+    }
+  
+  #logo {
+  max-width: 5em;
+    position: absolute;
+left: 10%;
+  bottom:35em;
+}
+    #main-header{
+    }
+  
+  .splash{
+  visibility: visible;
+}
+  
+  #main-header{
+    margin-top: -.75em;
+      margin-bottom: 2em;
+  }
+  
 }
