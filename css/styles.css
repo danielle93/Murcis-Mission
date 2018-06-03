@@ -397,7 +397,7 @@ a {
 }
 
 #nav-ul li{
-    padding: 1em;
+    padding: 16px;
     border-bottom: 1px rgba(0,0,0,.2) solid;
 }
 
@@ -406,17 +406,21 @@ a {
     }
 
 #logo{
-  position: relative;
-  bottom: 3em;
-  left: 12em;
-  width:30%;
-    margin-bottom: -2.5em;
-
+  position: absolute;
+    top:8px;
+    margin: 0 auto;
+    max-width:100px;
+  width:100%;
 }
 
 
 .splash{
   visibility: hidden;
+}
+
+iframe.available-animals{
+    width: 100%;
+    height:1000px;
 }
 
 /***
@@ -427,11 +431,19 @@ Media Queries
 Mobile
 */
 
+@media (max-width: 800px) {
+    
+    #logo{
+        margin-left:32%;
 
-@media (min-width: 600px) {
+    }
+}
+
+@media (min-width: 800px) {
   #main-header .logo, #main-header nav a {
     padding: 10px 15px;
   }
+    
   #sidr, #sidr-show-hide{
       visibility: hidden;
     }
@@ -439,15 +451,12 @@ Mobile
   #nav{
       visibility: visible;
     position: absolute;
-    right: 1%;
+    right: 8%;
     }
   
-  #logo {
-  max-width: 5em;
-    position: absolute;
-left: 10%;
-  bottom:30em;
-}
+    #logo{
+    }
+    
     #main-header{
     }
   
