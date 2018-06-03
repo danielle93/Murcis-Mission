@@ -173,12 +173,27 @@ textarea:focus {
   background-size: cover;
 background-position:top;  
     padding: 10em 0;
+    
+        margin-top: 20px;
+
+}
+
+#donate {
+  background: linear-gradient(to right, rgba(114,129,147,.8), rgba(255,178,166,.8)), url('../images/murci-van.jpg') no-repeat;
+  background-size: cover;
+background-position:top;  
+    padding: 15em 0;
+    
+        margin-top: 20px;
+
 }
 
 /* ---- Intro ---- */
 #intro {
   background: url('../images/murci-hero-2.jpg') no-repeat;
   background-size: cover;
+    
+    margin-top: 20px;
 
   display: flex;
   justify-content: center;
@@ -529,6 +544,7 @@ background-position:top;
   position: absolute;
     top:8px;
     margin: 0 auto;
+    margin-bottom: 20px;
     max-width:100px;
   width:100%;
 }
@@ -554,6 +570,7 @@ Mobile
 @media (max-width: 800px) {
     
     #logo{
+        top:20px;
         margin-left:32%;
 
     }
@@ -573,9 +590,7 @@ Mobile
     position: absolute;
     right: 8%;
     }
-  
-    #logo{
-    }
+ 
     
     #main-header{
     }
