@@ -121,15 +121,71 @@ a {
   }
 }
 
+/* ------ Contact Form ------ */
+
+form {
+padding: 10px;
+}
+
+label, input, textarea{
+  display: block;
+  margin: 10px;
+  transition: background .5s;
+    width:100%;
+}
+
+input{
+        padding: 1em;
+
+}
+
+textarea{
+    height:150px;
+}
+
+/*  Specificity Score: 0,0,1,1  */
+input[type=submit]{
+  background: #ffb2a6;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+    font-size:1.2em;
+  transition: background 1s;
+width: 200px;
+}
+
+input:hover[type=submit]{
+  background: #6e8795;
+  
+}
+
+input:focus,
+textarea:focus {
+  background: lightyellow;
+  outline: none;
+}
+
+/* --- About Page --- */
+
+#about {
+  background: url('../images/murci-hero-3.png') no-repeat;
+  background-size: cover;
+background-position:top;  
+    padding: 10em 0;
+}
+
 /* ---- Intro ---- */
 #intro {
-  background: url('https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27459415_390683294725077_2937428358980975719_n.jpg?oh=db4ac34682ce659a99c3a9faf79291f9&oe=5B2643F8') no-repeat;
+  background: url('../images/murci-hero-2.jpg') no-repeat;
   background-size: cover;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 6em 0;
 }
+
 #intro .cta {
   display: flex;
   flex-direction: column;
@@ -350,6 +406,10 @@ a {
 }
 
 /* ---- Footer ---- */
+.social-icon{
+    display: inline-block;
+    width:30px;
+}
 #main-footer {
   background: #414d5d;
   flex: 1;
@@ -400,6 +460,11 @@ a {
     padding: 16px;
     border-bottom: 1px rgba(0,0,0,.2) solid;
 }
+
+#nav a:hover{
+    border-bottom: 2px solid #738794;
+}
+
 
 #nav{
       visibility: hidden;

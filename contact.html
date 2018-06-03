@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Murci's Mission</title>
     <link REL=StyleSheet HREF="css/styles.css" TYPE="text/css" MEDIA=screen>
 </head>
 
 <body>
-  <header id='main-header'>
-  
-  <div class='container'>
-      <img id="logo" src="http://i67.tinypic.com/acel3m.jpg">
-    
-    <nav>
+  <a id="sidr-show-hide" href="#sidr">&#9776;</a>
 
-       <a href='index.html'>Home</a>
+<aside id="sidr">
+
+  <ul id="nav-ul">
+    <li><a href="#homescreen">Home</a></li>
+    <li><a href="#one">Adopt</a></li>
+    <li><a href="#two">Our Mission</a></li>
+    <li><a href="#three">Shop</a></li>
+    <li><a href="#three">Contact</a></li>
+    
+    <li><a href="#three">Donate</a></li>
+  </ul>
+  
+  
+</aside>
+
+<header id='main-header'>
+  <div class='container'>
+    <img id="logo" src="http://i67.tinypic.com/acel3m.jpg"><a class='logo' href='#'></a>
+    <nav id="nav">
+
+      <a href='index.html'>Home</a>
       <a href='available-animals.html'>Adopt</a>
       <a href='about.html'>Our Mission</a>
       <a href='shop.html'>Shop</a>
@@ -23,10 +39,37 @@
     </nav>
   </div>
 </header>
-<h1>Coming soon...</h1>
 
+<section class="container">
+<h2>We would love to hear from you!</h2>
+
+    <p><strong>Phone: <a href="tel:5099790040">509.979.0040</a></strong></p>
+    <p><strong>Email: <a href="mailto:information@murcismission.org">information@murcismission.org</a></strong></p>
+
+<!-- Non-HTML5 Elements -->
+<form action="https://formspree.io/information@murcismission.org"
+      method="POST">
+  <label for="name">Name</label>
+  <input type="text" name="name"/>
+  
+  <label for="email">Email</label>
+  <input type="text" name="email"/>
+  
+  <label for="message">Message</label>
+  <textarea name="message"></textarea>
+  
+  <input type="submit" value="Talk soon!"/>
+</form>
+
+</section>
 <div id='main-footer'>
-  <p>Murci's Mission &copy 2017</p>
-</div>  
+    <a href="https://www.facebook.com/murcismission.org/"></a><img class="social-icon" src="/images/facebook.png" alt=""><p>Murci's Mission &copy 2017  | <a href="/resources.html">Resources</a> | <a href="/our-partners.html">Our Partners</a> | <a href="/contact.html">Contact</a></p>
+</div> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sidr/2.2.1/jquery.sidr.min.js"></script>
+
+<script src="js/scripts.js" type="text/javascript" defer="defer"></script>
 </body>
 </html>
